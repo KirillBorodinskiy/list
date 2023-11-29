@@ -1,5 +1,5 @@
 #include "list.h"
-
+#include "iterator.h"
 
 List::List()
         : first(new Element()),
@@ -131,4 +131,7 @@ void List::sort() {
 //        std::cout << " changed to -> " << temp->getData() << std::endl;
 
     }
+}
+ListIterator* List::getIterator() {
+    return new ListIterator(this);
 }

@@ -2,7 +2,8 @@
 #define LIST_H
 
 #include "element.h"
-
+class Iterator;
+class ListIterator;
 class List {
     Element *first;
     Element *last;
@@ -60,6 +61,9 @@ public:
     }
 
     bool remove(Data d);
+    friend class ListIterator;
+
+    ListIterator *getIterator();
 };
 
 

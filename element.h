@@ -31,6 +31,7 @@ public:
     }
 
     friend class List;
+    friend class ListIterator;
 };
 
 
