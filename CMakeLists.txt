@@ -13,4 +13,6 @@ add_executable(list main.cpp
         Queue.cpp
         Queue.h
         iterator.h
-        iterator.cpp)
+        iterator.cpp
+        vector.h
+        vector.cpp)
